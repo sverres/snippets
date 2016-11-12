@@ -19,7 +19,7 @@ print
 print " web server started for this folder at http://localhost:8000"
 print
 print " -----------------------------------------------------------"
-print " * http://github.com/sverres/snippets"
+print " * https://github.com/sverres/snippets"
 print " * 11.11.2016"
 print " -----------------------------------------------------------"
 print 
