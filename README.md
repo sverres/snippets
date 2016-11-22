@@ -2,7 +2,7 @@
 
 Some useful bits - could be
 
----
+
 ## FronterQuiz2Blackboard
 
 Konverterer test-spørsmål fra Fronter eksport-format til Blackboard import-format.  
@@ -22,6 +22,8 @@ Konvertering kan gjøres slik fra kommandolinje:
 Produsert fil må sjekkes for eventuelle uregelmessigheter i form av ekstra linjeskift etc,  
 og den må redigeres i henhold til formatreglene for Blackboard (spørsmålstype og  
   correct/incorrect - som nevnt ovenfor).
+
+For å få med norske tegn må importfil ha Windows 1252 e.l. tegnsett. UTF-8 fungerer ikke pr. pr. 22.11.16.
 
 Referanser:
 
@@ -46,4 +48,3 @@ Reference:
 - [Brad Parks' servit.py](http://stackoverflow.com/questions/12193803/invoke-python-simplehttpserver-from-command-line-with-no-cache-option/25708957#25708957)
 - [Python 2 Internet Protocols and Support](https://docs.python.org/2/library/internet.html)
 - [Caching Tutorial](https://www.mnot.net/cache_docs/)
----
