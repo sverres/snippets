@@ -7,23 +7,30 @@ Some useful bits - could be
 
 Konverterer test-spørsmål fra Fronter eksport-format til Blackboard import-format.  
 
-Fungerer på flervalgspørsmål, tar med spørsmålstekst og svaralternativ.  
-Setter alle spørsmål til type MC - Multiple Choice,  
-dette må eventult redigeres manuelt til MA - Multiple Answers.  
-Setter alle svar til incorrect, korrekte svar må redigeres manuelt til correct.  
-Resultatfil kan lett importeres til Excel for redigering. Skilletegn: tab.  
+- Fungerer på flervalgspørsmål, tar med spørsmålstekst og svaralternativ.  
+- Setter alle spørsmål til type MC - Multiple Choice, dette må eventult redigeres manuelt til MA - Multiple Answers.  
+- Setter alle svar til incorrect, korrekte svar må redigeres manuelt til correct.  
+- Resultatfil kan lett importeres til Excel for redigering. Skilletegn: tab.  
 
 FronterQuiz2Blackboard.xsl brukes sammen med f.eks. Sablotron XSLT Processor.
 
 Konvertering kan gjøres slik fra kommandolinje:
 
-`sabcmd FronterQuiz2Blackboard.xsl FronterQuiz.xml BlackboardQuiz.txt`
+> `sabcmd FronterQuiz2Blackboard.xsl FronterQuiz.xml BlackboardQuiz.txt`
 
-Produsert fil må sjekkes for eventuelle uregelmessigheter i form av ekstra linjeskift etc,  
-og den må redigeres i henhold til formatreglene for Blackboard (spørsmålstype og  
-  correct/incorrect - som nevnt ovenfor).
+Produsert fil må sjekkes for eventuelle uregelmessigheter i form av ekstra linjeskift etc, og den må redigeres i henhold til formatreglene for Blackboard (spørsmålstype og correct/incorrect - som nevnt ovenfor).
 
-For å få med norske tegn må importfil ha Windows 1252 e.l. tegnsett. UTF-8 fungerer ikke pr. pr. 22.11.16.
+Et alternativ til å bruke Sablotron kan være å legge stilark-informasjonen inn i eksportert XML-fil fra Fronter:  
+>- Denne linjen må legges inn som linje 2 i eksportert XML-fil fra Fronter:  
+`<?xml-stylesheet  type="text/xsl" href="FronterQuiz2Blackboard.xsl"?>`
+>- *FronterQuiz2Blackboard.xsl* legges i samme mappe som XML-fil.
+>- XML-fil åpnes så i Internet Explorer eller Edge og den skal da vises ferdig omformatert for Blackboard.
+>- Spørsmålene kopieres fra nettleseren og limes inn i Excel: Det må da limes inn som tekst (høyreklikk og lim inn som ...)
+>- Når filen er ferdig redigert i Excel lagres den som tab-separert fil og er klar for import til Blackboard.
+
+
+For å få med norske tegn må importfil ha Windows 1252 e.l. tegnsett.  
+UTF-8 fungerer ikke pr. pr. 22.11.16.
 
 Referanser:
 
