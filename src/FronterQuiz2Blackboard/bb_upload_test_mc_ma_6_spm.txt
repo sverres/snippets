@@ -1,0 +1,6 @@
+MC	Hva heter hovedstaden i Uzbekistan?	Tashkent	correct	Bishkek	incorrect	Kashmir	incorrect
+MC	Hvor finner du Kalahari-ørkenen?	Sør-Afrika	correct	Øst-Afrika	incorrect	Midtøsten	incorrect
+MA	I fylke ligger Flåklypa?	Oppland	correct	Hedmark	incorrect	Sør-Trøndelag	incorrect
+MC	Hvilken by er Sveriges fjerde største?	Malmö	incorrect	Norrköping	incorrect	Uppsala	correct
+MA	Hvilke av disse fylkene har grense mot Buskerud?	Vestfold	correct	Hordaland	correct	Telemark	correct	Akershus	correct	Sogn og Fjordane	correct	Oslo	correct
+MC	Hva er det høyeste fjellet i Sveits?	Matterhorn	incorrect	Mont Blanc	incorrect	Dufourspitze	correct
